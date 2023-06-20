@@ -6,12 +6,6 @@ from custom_parser import Parser, eq_ineq
 from smt_parser import *
 from solver import DAG
 
-
-directory_txt = 'AUTOMATED_REASONING_FINAL/input_txt'
-directory_smt = 'AUTOMATED_REASONING_FINAL/input_smt2'
-extension_txt = '.txt'
-extension_smt = '.smt2'
-
 def run(string):
     start = time()
     print(f"Checking formula: {string}")
@@ -37,8 +31,10 @@ def run(string):
     print(f"The formula is: {outcome}, execution time: {end - start:.5f} seconds")
     print('\033[34m' + '-'*90 + '\033[0m')
 
-
 def main():
+    directory_txt = 'AUTOMATED_REASONING_FINAL/input_txt'
+    directory_smt = 'AUTOMATED_REASONING_FINAL/input_smt2'
+
     print('\033[33m' + '*'*90 + '\033[0m')
     print("CHECKING TXT FILE")
 
