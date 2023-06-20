@@ -1,6 +1,6 @@
 import os
-from time import time
 
+from time import time
 from custom_parser import *
 from solver import DAG
 
