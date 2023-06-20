@@ -1,9 +1,7 @@
 import os
 from time import time
 
-from smt_parser import Custom_parser
-from custom_parser import Parser, eq_ineq
-from smt_parser import *
+from custom_parser import *
 from solver import DAG
 
 def run(string):
