@@ -105,7 +105,7 @@ class DAG:
         for eq in self.equalities:
             val1, val2 = eq[0], eq[1]
             if (val1, val2) in self.forbidden_list: return "UNSAT -> forbidden list"
-            if (val1, val2) in self.forbidden_list: return "UNSAT -> forbidden list"
+            if (val2, val1) in self.forbidden_list: return "UNSAT -> forbidden list"
             self.MERGE(eq[0], eq[1])
         for ineq in self.inequalities:
             val1, val2 = self.FIND(ineq[0]), self.FIND(ineq[1])
