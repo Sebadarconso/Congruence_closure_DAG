@@ -30,9 +30,10 @@ def run(string):
     print('\033[34m' + '-'*90 + '\033[0m')
 
 def main():
-    directory_txt = 'AUTOMATED_REASONING_FINAL/input_txt'
-    directory_smt = 'AUTOMATED_REASONING_FINAL/input_smt2'
+    directory_txt = input('Insert absolute path to txt directory: ')
+    directory_smt = input('Insert absolute path to smt directory: ')
 
+    
     print('\033[33m' + '*'*90 + '\033[0m')
     print("CHECKING TXT FILE")
 

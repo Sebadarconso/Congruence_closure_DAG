@@ -1,5 +1,6 @@
 import re
 import itertools
+
 from pyparsing import nestedExpr
 from solver import Node
 from pysmt.smtlib.parser import SmtLibParser
