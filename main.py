@@ -1,4 +1,5 @@
 import os
+import sys
 
 from time import time
 from custom_parser import *
@@ -29,11 +30,12 @@ def run(string):
     print(f"The formula is: {outcome}, execution time: {end - start:.5f} seconds")
     print('\033[34m' + '-'*90 + '\033[0m')
 
-def main():
-    directory_txt = input('Insert absolute path to txt directory: ')
-    directory_smt = input('Insert absolute path to smt directory: ')
-
-    
+def main(file1='', file2=''):
+    # directory_txt = input('Insert absolute path to txt directory: ')
+    # directory_smt = input('Insert absolute path to smt directory: ')
+    directory_txt = sys.argv[1]
+    directory_smt = sys.argv[2]
+        
     print('\033[33m' + '*'*90 + '\033[0m')
     print("CHECKING TXT FILE")
 
