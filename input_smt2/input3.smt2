@@ -1,3 +1,4 @@
+(set-info :status sat)
 (declare-sort A 0)                      
 (declare-fun f (A) A)                  
 (declare-const a A)                   

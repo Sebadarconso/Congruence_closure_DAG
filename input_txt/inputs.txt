@@ -1,3 +1,4 @@
+f(a)!=a&f(f(f(f(f(a)))))=a #SAT
 f(f(f(a))) = a & f(f(f(f(f(a))))) = a & f(a) != a   #UNSAT
 x1 != x1 #UNSAT
 a = b1 & b1 = b2 & b2 = b3 & b3 = c & f(a1,a1) = a & f(c1,c1) = c & a1 = c1 & a != c #UNSAT
