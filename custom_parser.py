@@ -12,7 +12,6 @@ class Parser:
         self.graph = graph
         self.ids = set()
         self.atoms_dict = dict()
-        self.atoms_list = []
     
     ## function for parsing strings
     def parse(self, input):
