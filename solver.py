@@ -32,7 +32,7 @@ class DAG:
     def UNION(self, n1:int, n2:int):
         n1 = self.NODE(self.FIND(n1))
         n2 = self.NODE(self.FIND(n2))
-        if n1.ccpar > n2.ccpar:
+        if len(n1.ccpar) > len(n2.ccpar):
             n1.find = n2.find
             n2.ccpar = n1.ccpar.union(n2.ccpar)
             n1.ccpar = set()

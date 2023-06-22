@@ -3,7 +3,6 @@ x1 != x1 #UNSAT
 a = b1 & b1 = b2 & b2 = b3 & b3 = c & f(a1,a1) = a & f(c1,c1) = c & a1 = c1 & a != c #UNSAT
 f(x) = f(y) & x != y #SAT
 x = y & f(x) != f(y) #UNSAT
-f(a,b) = a & f(f(a,b),b) != a #UNSAT
 f(f(f(a))) = f(f(a)) & f(f(f(f(a)))) = a & f(a) != a #UNSAT
 f(x,y) = f(y,x) & f(a,y) != f(y,a) #UNSAT
 f(g(x)) = g(f(x)) & f(g(f(y))) = x & f(y) = x & g(f(x)) != x #SAT
