@@ -67,6 +67,7 @@ class Parser:
             parts = clause.split('=')
             res.update(parts)
 
+        ## check a string is a substring of an existing formula
         for element1 in res:
             for element2 in res:
                 if element1 != element2 and element1 in element2 and element2[element2.find(element1) + len(element1)] in ['=', '(', ')']:
@@ -137,7 +138,7 @@ def eq_ineq(equations, atoms_dict):
         ## split equalities and inequalities and add to the respective lists
         parts = [atoms_dict[part.replace(' ', '')] for part in eq.split('!=')] if '!' in eq else [atoms_dict[part.replace(' ', '')] for part in eq.split('=')]
 
-        ## if it's a negation we append the parts in the inequalities and in the forbidden list
+        ## if it's a negation append the parts in the inequalities and in the forbidden list
         if '!' in eq:
             inequalities.append(parts)
             forbidden_list.add(tuple(parts))
