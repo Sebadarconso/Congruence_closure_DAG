@@ -31,6 +31,8 @@ Other the fact that the first run of the main might be slow and the problem with
 ## Most important
 The algorithm can process both DNF and plain conjunctions of equalities and inequalities, but there are some things to keep in mind:
 
+- equalities are represented by '='
+- inequalities are represented by '!='
 - equalities and inequalites between '&' must **not** be surrounded by parentheses, for example it has to be like a = b & c = d or a = b & c != d, or 
 f(a,b) = f(b,c) & a != b spaces do not represent a problem.
 - if the formula is in DNF the parts in '&' should be the only ones surrounded by parentheses and not the whole formula, for example: (a = b & c != d) | (f(a,b) = f(b,c) & a != b) | (...&...&...) ... is a valid formula
