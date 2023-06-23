@@ -1,3 +1,4 @@
+; custom formula, directly translated from one found on the Bradley-Manna textbook
 (set-info :status sat)
 (declare-sort A 0)                      
 (declare-fun f (A) A)                  
