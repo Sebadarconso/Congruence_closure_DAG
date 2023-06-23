@@ -5,6 +5,7 @@ from pyparsing import nestedExpr
 from solver import Node
 from pysmt.smtlib.parser import SmtLibParser
 
+## main class for parsing
 class Parser:
 
     def __init__(self, graph):
